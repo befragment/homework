@@ -1,11 +1,7 @@
 #include <iostream>
 
 bool second(const double& x, const double& y) {
-    if (std::abs(x) <= 2 && std::abs(y) <= 1 && x * x + y * y >= 1) {
-        return true;
-    } else {
-        return false;
-    }
+    return (std::abs(x) <= 2 && std::abs(y) <= 1 && x * x + y * y >= 1)
 }
 
 int main() {
