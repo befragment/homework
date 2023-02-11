@@ -22,6 +22,9 @@ private:
 public:
 
     Rational(int32_t num_, int32_t denum_) {
+        if (denum <= 0) {
+            throw std::invalid_argument("expected positive denumerator");
+        }
         num = num_;
         denum = std::abs(denum_);
     };
