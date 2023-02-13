@@ -10,7 +10,7 @@ class Rational {
 private:
 
     int32_t num {0};
-    int32_t denum {0};
+    int32_t denum {1};
     static const char frac_sign {'/'};
 
     Rational frac_reduction() {
