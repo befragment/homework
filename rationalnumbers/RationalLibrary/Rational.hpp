@@ -28,6 +28,11 @@ public:
         num = num_;
         denum = std::abs(denum_);
     };
+    
+    explicit Rational(int32_t num_) {
+        num = num_;
+        denum = 1;
+    }
 
     ~Rational() = default;
 
