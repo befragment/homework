@@ -201,6 +201,20 @@ public:
     friend std::istream& operator>>(std::istream& istream, Rational& frac);
 
     // ============================== bit operators ============================== //
+    
+    friend Rational reversed_fraction(Rational& arg);
+
+    friend Rational pow(Rational& arg, int32_t& exp);
+
+    friend Rational abs(Rational& frac);
+
+    static int32_t getNum(Rational& frac) {
+        return frac.num;
+    }
+
+    static int32_t getDenum(Rational& frac) {
+        return frac.denum;
+    }
 
 };
 
